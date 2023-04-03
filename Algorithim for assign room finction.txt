@@ -1,0 +1,55 @@
+Algorithm for assign_room() function:
+
+Input:
+
+preferred_building: the preferred building to assign the room to
+gender: gender of the person to be assigned the room
+name: name of the person to be assigned the room
+age: age of the person to be assigned the room
+phone_number: phone number of the person to be assigned the room
+Output:
+
+a message indicating the assigned room or an error message
+Algorithm:
+
+Check if the gender is male or female.
+If gender is female, search for an available room on the second floor of the preferred building.
+If there are no available rooms on the second floor, search for an available room on the third floor of the preferred building.
+If there are no available rooms on the preferred building, search for an available room on the other building.
+If there are no available rooms on both buildings, return an error message.
+If a room is found, append the person's details to the room's occupants list.
+Return a message indicating the assigned room or an error message.
+Detailed steps for female:
+
+If gender is female, set room_type = 'female'.
+Search for an available room on the second floor of the preferred building.
+a. For each room on the second floor of the preferred building:
+i. If the room is not full and there are less than 4 female occupants in the room, assign the room to the person.
+- Append the person's details to the occupants list of the room.
+- Update the preferred_building variable to indicate which building the person was assigned to.
+- Return a message indicating the assigned room and building.
+If there are no available rooms on the second floor, search for an available room on the third floor of the preferred building.
+a. For each room on the third floor of the preferred building:
+i. If the room is not full and there are less than 4 female occupants in the room, assign the room to the person.
+- Append the person's details to the occupants list of the room.
+- Update the preferred_building variable to indicate which building the person was assigned to.
+- Return a message indicating the assigned room and building.
+If all rooms on the preferred building are full or there are no available rooms on the preferred building:
+a. Search for an available room on the other building.
+i. For each room on the other building:
+- If the room is not full and there are less than 4 female occupants in the room, assign the room to the person.
+- Append the person's details to the occupants list of the room.
+- Return a message indicating the assigned room and building.
+If all rooms on both buildings are full, return an error message.
+Detailed steps for male:
+
+If gender is male, set room_type = 'male'.
+Search for an available room on the first floor of the preferred building.
+a. For each room on the first floor of the preferred building:
+i. If the room is not full and there are less than 4 male occupants in the room, assign the room to the person.
+- Append the person's details to the occupants list of the room.
+- Update the preferred_building variable to indicate which building the person was assigned to.
+- Return a message indicating the assigned room and building.
+If there are no available rooms on the first floor, search for an available room on the third floor of the preferred building.
+a. For each room on the third floor of the preferred building:
+i. If the room is not full and there are less than 4 male occupants in the room,

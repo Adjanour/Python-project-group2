@@ -1,0 +1,20 @@
+Testing the function with some sample inputs
+print(assign_room(dubai_rooms, 'female', 'Alice', 25, '1234567890'))
+print(assign_room(dubai_rooms, 'male', 'Bob', 28, '9876543210'))
+print(assign_room(novotel_rooms, 'female', 'Claire', 22, '1112223334'))
+print(assign_room(novotel_rooms, 'male', 'David', 30, '5678901234'))
+print(assign_room(dubai_rooms, 'female', 'Emily', 19, '5556667778'))
+print(assign_room(novotel_rooms, 'male', 'Frank', 35, '9990001112'))
+print(assign_room(novotel_rooms, 'female', 'Grace', 20, '4445556667'))
+print(assign_room(novotel_rooms, 'male', 'Henry', 40, '2223334445'))
+print(assign_room(dubai_rooms, 'female', 'Ivy', 18, '8889990001'))
+print(assign_room(dubai_rooms, 'male', 'John', 45, '4445556667'))
+
+Try assigning more than 4 occupants to a room
+print(assign_room(novotel_rooms, 'male', 'Tom', 27, '7778889990'))
+print(assign_room(novotel_rooms, 'female', 'Kate', 23, '1112223334'))
+
+Try assigning to full buildings
+for i in range(26):
+print(assign_room(novotel_rooms, 'female', f'Occupant {i}', 20, '1234567890'))
+print(assign_room(dubai_rooms, 'male', f'Occupant {i}', 20, '1234567890'))
