@@ -87,23 +87,8 @@ def assign_room(preferred_building, gender, name, age, phone_number):
     # If gender is not male or female, return error message
     return f"Sorry {name}, we cannot assign a room to someone of gender '{gender}'."
 # # Open input file for reading
-# with open('Data.txt', 'r') as input_file:
-#     # Read input from file
-#     input_data = input_file.readlines()
     
 # # Process input
-# with open('ResultOfTest', 'w') as output_file:
-#     for line in input_data:
-#         name, gender,preferred_building,age,phone_number = line.strip().split()
-#         try:
-#             if preferred_building.lower() == 'dubai':
-#                 output_file.write = assign_room(dubai_rooms, gender, name, age, phone_number)
-#             elif preferred_building.lower() == 'novotel':
-#                 output_file.write = assign_room(novotel_rooms, gender, name, age, phone_number)
-#             else:
-#                 raise ValueError(f"Invalid preferred building: {preferred_building}")
-#         except ValueError as e:
-#             print(str(e))
 
 def read_input_file(file_name):
     input_data = []
