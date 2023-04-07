@@ -86,9 +86,6 @@ def assign_room(preferred_building, gender, name, age, phone_number):
 
     # If gender is not male or female, return error message
     return f"Sorry {name}, we cannot assign a room to someone of gender '{gender}'."
-# # Open input file for reading
-    
-# # Process input
 
 def read_input_file(file_name):
     input_data = []

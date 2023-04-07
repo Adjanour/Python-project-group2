@@ -121,8 +121,3 @@ def main():
 if __name__ == '__main__':
     main()
     
-### File to have random list of participants to show that extreme cases work
-## and also a show as example of the people entering their own details and being assigned
-# Issue about  showing the available rooms to the user in case preferred building is unavailable
-# Also issue about user input being wrong 
-#Also handling 
