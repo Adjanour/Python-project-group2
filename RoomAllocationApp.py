@@ -98,8 +98,10 @@ def main():
             age = input("Invalid input. Please enter your age as a number: ")
         gender = input("Enter your gender ('Male'/ 'Female'): ")
         phone_number = input("Enter your phone number: ")
-        while not phone_number.isdigit() and len(phone_number) != 10:
+        while  not phone_number.isdigit():
             phone_number = input("Invalid input. Please enter your phone number as a number: ")
+        while  not len(phone_number) == 10 :
+            phone_number = input("Invalid input.Phone number is less than 10 digits: ")
         preferred_building = input("Enter your preferred building ('Dubai' or 'Novotel'): ")
 
         try:
